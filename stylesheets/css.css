@@ -1,390 +1,157 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="css.css">
-</head>
-<body>
-	<div id="header">
-		<div class="container">
-			<div class="header_top">
-				<span>1-888-123-4567</span>
-				<p>Free Ground Shipping for Products over $100</p>
-				<div class="share">
-					<ul>
-						<li class="tw"><a href="#"></a></li>
-						<li class="fb"><a href="#"></a></li>
-						<li class="rss"><a href="#"></a></li>
-						<li class="mail"><a href="#"></a></li>
-					</ul>
-				</div>
-				<div class="account">
-					<a href="#">My ttAccount</a>
-					<div class="cart">
-						<ul>
-							<li id="cart1"><a href="#">Shop</a></li>
-							<li id="cart2"><p>$0.00</p></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="header_bottom">
-				<img src="img/logo.png" alt="foodie shop" usemap="#x">
+*{margin:0;padding:0;}
+body{font-size:12px;font-family:Arial;}
+li{list-style:none;}
+a{text-decoration:none;color:#000;}
+.clear{clear:both;}
+img,input{border:none;outline:none;}
+.container{width:980px;margin:0 auto;}
+
+
+#header{background:url(img/top.png) repeat-x;height:169px;overflow: hidden;}
+
+.header_top{overflow: hidden;}
+.header_top span,.header_top>p,.share,.share li{float:left;}
+.header_top span{color:#fff;background:url(img/tel.png) no-repeat left center;padding-left:25px;font-size:20px;margin:10px 0 0 0;}
+.header_top>p{color:#bacde4;padding-left:25px;font-size:13px;margin:15px 0 0 30px;}
+.tw{background:url(img/t.png) no-repeat center #3d5778;width:28px;height:28px;border-radius:50%;box-shadow:0 0 2px #949494;}
+.fb{background:url(img/f.png) no-repeat center #3d5778;width:28px;height:28px;border-radius:50%;box-shadow:0 0 2px #949494;margin-left:10px;}
+.rss{background:url(img/rss.png) no-repeat center #3d5778;width:28px;height:28px;border-radius:50%;box-shadow:0 0 2px #949494;margin-left:10px;}
+.mail{background:url(img/mail.png) no-repeat center #3d5778;width:28px;height:28px;border-radius:50%;box-shadow:0 0 2px #949494;margin-left:10px;}
+.share{margin-top:6px;margin-left:50px;}
+.share a{width:28px;height: 28px;display: block;}
+.account{float:right;}
+.account>a,.cart,.cart li{float:left;}
+.account>a{color:#bacde4;font-size:13px;margin:15px 0 0 50px;}
+#cart1{color:#fff;background:url(img/cart.png) no-repeat 10px center #da4b2c;height:28px;width:75px;border-radius:20px 0 0 20px;border:2px solid #881c04;
+	box-shadow:inset 2px 4px 6px #fff;}
+#cart1 a{line-height:28px;padding-left:35px;color:#fff;}
+#cart2{color:#fff;background:#fe927b;height:28px;width:75px;border-radius:0 20px 20px 0;border:2px solid #881c04;
+	box-shadow:inset -2px 4px 6px #fff;text-align: center;}
+#cart2 p{line-height:28px;color:#fff;}
+.cart{margin:5px 0 0 15px;}
+
+.header_bottom{overflow:hidden;margin-top: 16px;position:relative;}
+.header_bottom>img,.header_bottom>ul,.header_bottom>ul>li{float:left;}
+.signin{float:right;}
+.search{clear:both;}
+.nav{color:#fff;}
+.nav span{color:#f8f5c6;}
+.header_bottom>ul>li{padding:10px;margin-left:20px;}
+.header_bottom>ul>li:hover{background:rgba(32,4,97,0.3);border-radius:5px; }
+.header_bottom>ul{margin:20px 0 0 90px;}
+#signin1,#signin2{width:92px;height: 25px;}
+#signin1{background:url(img/lock.png) no-repeat 5px center #e6f3f3;border:1px solid #007f7e;border-radius: 5px 5px 0 0;box-shadow: 0px 0px 10px #60c9c9 inset;	}
+#signin2{background:url(img/pen.png) no-repeat 5px center #60c9c9;border:1px solid #007f7e;border-radius:0 0 5px 5px ;box-shadow: 0px 0px 10px #fff inset;	}
+#signin1 a{color:#fe6847;margin:5px 0 0 23px;display: block;}
+#signin2 a{color:#008281;margin:5px 0 0 23px;display: block;}
+.signin{margin-top: 22px;}
+
+.search{position: absolute;bottom:0px;left:280px;width:420px;height: 30px;border-radius: 10px 10px 0 0;background:url(img/back.png);border-top: 1px solid #1a876d;}
+.search form,.search_botton{float:left;margin:5px 0 0 7px;}
+.search input{width:310px;height: 14px;border:1px solid #aca856;padding:3px 5px 3px 5px;}
+.search_botton{width:80px;height:20px;line-height: 20px;background: url(img/ser.png) no-repeat 59px center #fe7759;box-shadow: inset 0px 7px 20px #fff;border:1px solid #e8360f;margin:5px 0 0 0;}
+.search_botton a{color:#901b02;margin-left: 5px;font-weight: bolder;}
+
+#main{background: url(img/back.png);overflow: hidden;padding-bottom: 30px;}
+
+.container>img{margin-top:25px;width:100%;}
+
+.left{float:left;width:240px;margin-top: 30px;}
+.right{float:right;width:724px;margin-top: 30px;}
+
+.c_main{background: #fff;border-radius:10px;border:5px solid #ebe8b0;position: relative;color:#a9a9a9;z-index: 0}
+.c_main:before{content: "";position: absolute;top:0;bottom: 0;left: 0;right: 0;border:1px solid #d2cf99;border-radius: 5px;z-index: -1;}
+.c_main ul{clear:both;margin-bottom: 20px;}
+.c_main li{text-indent: 52px;padding:5px;}
+.c_main li:before{content:"\2192";}
+.c_main a{color:#a9a9a9;margin-left: 10px;}
+.c_main h3{color:#fff;font-size: 20px;background: url(img/rib.png) no-repeat center;line-height:40px;margin:15px 0 0 -30px;padding:0 0 7px 85px;}
+
+.title{font-size:20px;padding-left: 30px;background: url(img/tit.png) no-repeat left center;margin-left: 5px;}
+.title a{color:#797976;}
+
+.pr{margin:30px 0 30px 0;}
+.pr li{border-top:1px solid #c2be67;overflow: hidden;padding-top: 13px;padding-bottom: 10px;}
+.pr li:first-child{border:none;}
+.pr a img{float:left;}
+.pr a p{float:right;width:153px;color:#87867d;}
+.pr a p span{color:#b7b7ac;}
+.pr>a{width:111px;height:21px;background: #fff;border:1px solid #cbc892;border-radius:10px;display: block;color:#fe7a5b;line-height: 21px;text-align: center;}
+
+.pm ul{background: url(img/pm.png) no-repeat center;width:184px;height: 56px;position: relative;margin-top: 30px;margin-left: 5px;}
+.pm ul a{width:40px;height: 25px;display: inline-block;}
+.l1{position: absolute;top:0px;left:0px;}
+.l2{position: absolute;top:0px;left:47px;}
+.l3{position: absolute;top:0px;left:94px;}
+.l4{position: absolute;top:0px;left:141px;}
+.l5{position: absolute;top:31px;left:0px;}
+.l6{position: absolute;top:31px;left:47px;}
+.l7{position: absolute;top:31px;left:94px;}
+.l8{position: absolute;top:31px;left:141px;}
+
+
+.t_main{background: #fff;border-radius:10px;border:5px solid #ebe8b0;position: relative;color:#a9a9a9;z-index: 0}
+.t_main:before{content: "";position: absolute;top:0;bottom: 0;left: 0;right: 0;border:1px solid #d2cf99;border-radius: 5px;z-index: -1;}
+.t_main ul{overflow: hidden;padding:20px 0 20px 0;}
+.t_main li{float:left;width:197px;padding:0 20px 0 20px;border-left: 1px solid #ebe8b0;}
+.t_main li:first-child{border:none;}
+.t_main li img{width:100%;}
+.t_main li p{color:#8d8d8d;margin-top:10px;}
+.t_main li h4{color:#8d8d8d;font-size:15px;margin-top:10px;}
+.t_main li span{color:#3f9392;font-size:15px;}
+.buynow{color:#fea491;font-size:13px;margin-top:10px;display: block;}
+
+
+.pop{margin-top: 30px;}
+.list {overflow: hidden;width:737px;margin-left:-13px;}
+.list li{overflow: hidden;float:left;width:161px;margin:13px 0 0 13px;background: #fff;border-radius:10px;border:5px solid #ebe8b0;position: relative;color:#a9a9a9;z-index: 0}
+.list li:before{content: "";position: absolute;top:0;bottom: 0;left: 0;right: 0;border:1px solid #d2cf99;border-radius: 5px;z-index: -1;}
+.list img{width:157px;padding:1px;margin:0 auto;display: block;}
+.list p{font-size:13px;color:#000;padding:5px;margin-left: 10px;}
+.list h5{color:#8d8d8d;margin-left: 15px;margin-top: 5px;}
+.list span{color:#3f9392;}
+.buy{color:#fea491;margin:10px 0 15px 15px;display: block;width:58px;height:18px;background: #fafaec;border:1px solid #cbc892;border-radius:9px;text-align: center;
+	line-height: 18px; float: left;}
+.like{float:right;margin:10px 15px 15px 0;width:41px;height:18px;background: url(img/heart.png) no-repeat right center;padding:0px 15px 0px 0px;line-height: 18px;}
+.like p{color:#8f8f8d;padding:0;}
+
+.page{border-top: 1px solid #c2be67;margin-top: 20px;}
+.page ul{width:194px;margin:10px auto;}
+.page li{float:left;padding:5px;}
+.page a{color:#fe7453;}
+.page li.act{background:#c2be67;}
+.page li.act a{color:#fff;}
+
+
+
+#footer{background: url(img/footer.png) repeat-x;overflow: hidden;}
+#footer .container{overflow: hidden;margin-top: 30px;}
+.cr{margin:20px 0 20px 0;}
+.cr a{text-decoration:underline;}
+.footer_left_list,.footer_middle{float:left;}
+.footer_right{float:right;}
+.footer_left_list>li{float:left;}
+#footer h4{color:#f8f5c6;font-size: 15px;}
+#footer a,#footer p{color:#c9cacc;font-size: 13px;}
+.footer_left_list>li,.footer_middle,.footer_right{margin-left:50px;}
+.footer_left_list{margin-left: -50px;}
+.footer_left_list_link{margin-top: 30px;}
+#footer .share{margin-left: 0;float:none;overflow: hidden;}
+.footer_middle_top{margin-bottom: 15px;}
+.footer_middle_top h4{margin-bottom: 15px;}
+.footer_middle_bottom h4,.footer_middle_bottom p,.footer_middle_bottom form{margin-bottom: 5px;}
+.footer_middle_bottom form{width:240px;height: 23px;}
+.footer_middle_bottom input{padding:3px 5px 3px 5px;border:1px solid #395070;float: left;}
+#footer .footer_middle_bottom a{padding:0px 0px 0px 0px;border:1px solid #395070;display: block;background: #fe7759;box-shadow: inset 0px 2px 4px #fff;
+	height:21px;line-height: 23px;color:#901c03;float:left;}
+
+ 
+.yibai{background: url(img/100.png) no-repeat left center;width:200px;height:45px;}
+.order{background: url(img/order.png) no-repeat left center;width:200px;height:45px;}
+.footer_right li{padding:10px 0 10px 65px;}
+.footer_right p{margin-top: 15px;}
+
+#go_top img{display: block;position: relative;left:-5px;}
+#go_top{position: fixed;bottom:50px;right:50px;text-indent:5px;}
+
 				
-				<ul>
-					<li><a href="#" class="nav">SPECIALS</a></li>
-					<li><a href="#" class="nav">FRUITS &AMP; VEG</a></li>
-					<li><a href="#" class="nav"><span>FOOD PRODUCTS</span></a></li>
-					<li><a href="#" class="nav">LOCATE STORE</a></li>
-					<li><a href="#" class="nav">FAN CLUB</a></li>
-				</ul>
-				<div class="signin">
-					<ul>
-						<li id="signin1">
-							
-							<a href="#">SIGN IN</a>
-						</li>
-						<li id="signin2">
-							
-							<a href="#">REGISTER</a>
-						</li>
-					</ul>
-				</div>
-				<div class="search">
-					<form action="#" method="get">
-						<input type="text" placeholder="Enter Product Details">
-					</form>
-					<div class="search_botton">
-						<a href="#">SEARCH</a>
-						<i></i>
-					</div>	
-				</div>
-			</div>			
-		</div>
-	</div>
-	<div id="main">
-	<div class="container">
-		<img src="img/header.png" alt="banner" usemap="#x">
-		<!-- <map name="x">
-			<area shape="rect" coords="800,10,980,100" href="#" alt="">
-		</map> -->
-		<!-- map元素已经逐渐被淘汰，可以使用相应尺寸的a元素覆盖在相应位置达到相同效果 -->
-		<div id="main_info">
-			<div class="left">
-				<div class="c">
-					<div class="c_topback"></div>
-					<div class="c_main">
-						<h3>Categories</h3>
-						
-						<ul>
-							<li><a href="#">Arts</a></li>
-							<li><a href="#">Artsa</a></li>
-							<li><a href="#">Artsaa</a></li>
-							<li><a href="#">Arts</a></li>
-							<li><a href="#">Arts</a></li>
-							<li><a href="#">Arts</a></li>
-							<li><a href="#">Arts</a></li>
-							<li><a href="#">Arts</a></li>
-							<li><a href="#">Arts</a></li>
-							<li><a href="#">Arts</a></li>
-							<li><a href="#">Arts</a></li>
-							<li><a href="#">Arts</a></li>
-							<li><a href="#">Arts</a></li>
-							<li><a href="#">Arts</a></li>
-							<li><a href="#">Arts</a></li>
-						</ul>
-						
-					</div>
-					<div class="c_bottomback"></div>
-				</div>
-				<div class="pr">
-					<div class="title">
-						<i></i>
-						<a href="#">Product Reviews</a>
-					</div>
-					<ul>
-						<li>
-							<a href="#">
-								<img src="img/Layer.png" alt="review">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span>Tue, June 2011 </span></p>
-							</a>	
-						</li>
-						<li>
-							<a href="#">
-								<img src="img/Layer.png" alt="review">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span>Tue, June 2011 </span></p>
-							</a>	
-						</li>
-						<li>
-							<a href="#">
-								<img src="img/Layer.png" alt="review">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span>Tue, June 2011 </span></p>
-							</a>	
-						</li>
-					</ul>
-					<a href="#" class="more">MORE REVIEWS</a>
-				</div>
-				<div class="pm">
-					<div class="title">
-						<i></i>
-						<a href="#">Payment Methods</a>
-					</div>
-					<ul>
-						<li class="l1"><a href="#"></a></li>
-						<li class="l2"><a href="#"></a></li>
-						<li class="l3"><a href="#"></a></li>
-						<li class="l4"><a href="#"></a></li>
-						<li class="l5"><a href="#"></a></li>
-						<li class="l6"><a href="#"></a></li>
-						<li class="l7"><a href="#"></a></li>
-						<li class="l8"><a href="#"></a></li>
-					</ul>
-				</div>						
-			</div>
-			<div class="right">
-				<div class="today">
-					<div class="title">
-						<i></i>
-						<a href="#">Today’s Featured Products</a>
-					</div>
-					<div class="today_topback"></div>
-					<div class="t_main">
-						<ul>
-							<li>
-								<img src="img/layer-39.png" alt="喜羊羊">
-								<p>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit.</p>
-								<h4>Price:<span>$23.00</span></h4>
-								<a href="#" class="buynow">&rarr; Buy Now</a>
-							</li>
-							<li>
-								<img src="img/layer-40.png" alt="鱼">
-								<p>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit.</p>
-								<h4>Price:<span>$23.00</span></h4>
-								<a href="#" class="buynow">&rarr; Buy Now</a>
-							</li>
-							<li>
-								<img src="img/layer-41.png" alt="车">
-								<p>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit.</p>
-								<h4>Price:<span>$23.00</span></h4>
-								<a href="#" class="buynow">&rarr; Buy Now</a>
-							</li>
-						</ul>
-					</div>
-					<div class="today_bottomback"></div>
-				</div>
-				<div class="pop">
-					<div class="title">
-						<i></i>
-						<a href="#">Popular Products</a>
-					</div>
-					<ul class="list">
-						<li>
-							<div class="list_backleft"></div>
-							<div class="l_main">
-								<img src="img/layer-47.png" alt="商品">
-								<p>Lorem ipsum dolor sit amet cons</p>
-								<h5>Price:<span>$23.00</span></h5>
-							</div>
-							<div class="list_backright"></div>
-							<a href="#" class="buy">BUY &rarr;</a>
-							<div class="like">
-								<p>120</p>
-								<i></i>
-							</div>	
-						</li>
-						<li>
-							<div class="list_backleft"></div>
-							<div class="l_main">
-								<img src="img/layer-48.png" alt="商品">
-								<p>Lorem ipsum dolor sit amet cons</p>
-								<h5>Price:<span>$23.00</span></h5>
-							</div>
-							<div class="l_backright"></div>
-							<a href="#" class="buy">BUY &rarr;</a>
-							<div class="like">
-								<p>120</p>
-								<i></i>
-							</div>	
-						</li>
-						<li>
-							<div class="list_backleft"></div>
-							<div class="l_main">
-								<img src="img/layer-49.png" alt="商品">
-								<p>Lorem ipsum dolor sit amet cons</p>
-								<h5>Price:<span>$23.00</span></h5>
-							</div>
-							<div class="list_backright"></div>
-							<a href="#" class="buy">BUY &rarr;</a>
-							<div class="like">
-								<p>120</p>
-								<i></i>
-							</div>	
-						</li>
-						<li>
-							<div class="list_backleft"></div>
-							<div class="l_main">
-								<img src="img/layer-50.png" alt="商品">
-								<p>Lorem ipsum dolor sit amet cons</p>
-								<h5>Price:<span>$23.00</span></h5>
-							</div>
-							<div class="list_backright"></div>
-							<a href="#" class="buy">BUY &rarr;</a>
-							<div class="like">
-								<p>120</p>
-								<i></i>
-							</div>	
-						</li>
-						<li>
-							<div class="list_backleft"></div>
-							<div class="l_main">
-								<img src="img/layer-47.png" alt="商品">
-								<p>Lorem ipsum dolor sit amet cons</p>
-								<h5>Price:<span>$23.00</span></h5>
-							</div>
-							<div class="list_backright"></div>
-							<a href="#" class="buy">BUY &rarr;</a>
-							<div class="like">
-								<p>120</p>
-								<i></i>
-							</div>	
-						</li>
-						<li>
-							<div class="list_backleft"></div>
-							<div class="l_main">
-								<img src="img/layer-48.png" alt="商品">
-								<p>Lorem ipsum dolor sit amet cons</p>
-								<h5>Price:<span>$23.00</span></h5>
-							</div>
-							<div class="list_backright"></div>
-							<a href="#" class="buy">BUY &rarr;</a>
-							<div class="like">
-								<p>120</p>
-								<i></i>
-							</div>	
-						</li>
-						<li>
-							<div class="list_backleft"></div>
-							<div class="l_main">
-								<img src="img/layer-49.png" alt="商品">
-								<p>Lorem ipsum dolor sit amet cons</p>
-								<h5>Price:<span>$23.00</span></h5>
-							</div>
-							<div class="list_backright"></div>
-							<a href="#" class="buy">BUY &rarr;</a>
-							<div class="like">
-								<p>120</p>
-								<i></i>
-							</div>	
-						</li>
-						<li>
-							<div class="list_backleft"></div>
-							<div class="l_main">
-								<img src="img/layer-50.png" alt="商品">
-								<p>Lorem ipsum dolor sit amet cons</p>
-								<h5>Price:<span>$23.00</span></h5>
-							</div>
-							<div class="list_backright"></div>
-							<a href="#" class="buy">BUY &rarr;</a>
-							<div class="like">
-								<p>120</p>
-								<i></i>
-							</div>	
-						</li>
-					</ul>
-					<div class="page">
-						<ul>
-							<li class="act"><a href="#">1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">4</a></li>
-							<li><a href="#">5</a></li>
-							<li><a href="#">Next&gt;</a></li>
-							<li><a href="#">Last&gt;&gt;</a></li>
-						</ul>
-					</div>	
-				</div>
-			</div>
-		</div>
-	</div>
-</div>	
-<div id="footer">
-	<div class="container">
-		<ul class="footer_left_list">
-			<li>
-				<h4>Company</h4>
-				<ul class="footer_left_list_link">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Home</a></li>
-				</ul>
-			</li>
-			<li>
-				<h4>Categories</h4>
-				<ul class="footer_left_list_link">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Home</a></li>
-				</ul>
-			</li>
-			<li>
-				<h4>information</h4>
-				<ul class="footer_left_list_link">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Home</a></li>
-					
-				</ul>
-			</li>
-		</ul>
-		<div class="footer_middle">
-			<div class="footer_middle_top">
-				<h4>Let’s be friends</h4>
-				<div class="share">
-					<ul>
-						<li class="tw"><a href="#"></a></li>
-						<li class="fb"><a href="#"></a></li>
-						<li class="rss"><a href="#"></a></li>
-						<li class="mail"><a href="#"></a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="footer_middle_bottom">
-				<h4>Subscribe</h4>
-				<p>Get free product updates &amp; specials!</p>
-				<form class="email" action="#" method="post">
-					<!-- <textarea placeholder="Enter Email"></textarea> -->
-					<input type="text" placeholder="Enter Email">
-					<a href="#">SUBMIT</a>
-				</form>
-			</div>
-		</div>
-		<ul class="footer_right">
-			<li class="yibai">
-				<i ></i>
-				<p>Shop online with us safely &amp; securely</p>
-			</li>
-			<li class="order">
-				<i ></i>
-				<p>We ship your orders anywhere!</p>
-			</li>
-		</ul>
-		<div class="clear"></div>
-		<div class="cr">
-			<p>©2011 Foodie Shop - Terms - Privacy Policy - Designed by <a href="#">GraphicsFuel.com</a></p>
-		</div>
-	</div>	
-</div>
-<div id="go_top">
-	<a href="https://sidneywa.github.io"><img src="img/Pattern-Fill-3-copy.png" alt="返回顶部">Top</a>
-</div>
-</body>
-</html>
