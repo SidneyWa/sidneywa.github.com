@@ -2,389 +2,119 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="stylesheets/css.css">
+	<title>今天吃什么</title>
+	<style>
+		.box{margin:10px auto;
+			width:500px;
+		padding:30px;
+		font-family: "宋体";
+		font-size: 30px;
+		background:#00fff6;
+		overflow: hidden;
+		border:1px solid #000;
+		margin-top: 30px;}
+		a{text-decoration:none;border:1px solid #000;line-height: 38px;float:left;margin-left: 10px;background:#63f912;font-size:20px;padding:0 10px;color:#000;
+			}
+		.box>a{margin-left: 0;}
+		
+
+		.cho{color:#f00;}
+		p{line-height: 20px;}
+		i{font-style: normal;color:#f00;}
+		input{line-height: 30px;padding:3px;vertical-align: middle;float:left;outline:none;border:2px solid #000;width:300px;height:30px;}
+		.box ol{list-style-position: inside;padding-left: 0}
+		.tips{font-size:16px;margin-bottom: 10px;display:none;}
+		form{overflow:hidden;}
+		li{color:#fff;font-size: 25px;background: #5833c4;padding:3px;margin:3px 0;}
+		
+	</style>
 </head>
 <body>
-	<div id="header">
-		<div class="container">
-			<div class="header_top">
-				<span>1-888-123-4567</span>
-				<p>Free Ground Shipping for Products over $100</p>
-				<div class="share">
-					<ul>
-						<li class="tw"><a href="#"></a></li>
-						<li class="fb"><a href="#"></a></li>
-						<li class="rss"><a href="#"></a></li>
-						<li class="mail"><a href="#"></a></li>
-					</ul>
-				</div>
-				<div class="account">
-					<a href="#">My ttAccount</a>
-					<div class="cart">
-						<ul>
-							<li id="cart1"><a href="#">Shop</a></li>
-							<li id="cart2"><p>$0.00</p></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="header_bottom">
-				<img src="img/logo.png" alt="foodie shop" usemap="#x">
-				
-				<ul>
-					<li><a href="#" class="nav">SPECIALS</a></li>
-					<li><a href="#" class="nav">FRUITS &AMP; VEG</a></li>
-					<li><a href="#" class="nav"><span>FOOD PRODUCTS</span></a></li>
-					<li><a href="#" class="nav">LOCATE STORE</a></li>
-					<li><a href="#" class="nav">FAN CLUB</a></li>
-				</ul>
-				<div class="signin">
-					<ul>
-						<li id="signin1">
-							
-							<a href="#">SIGN IN</a>
-						</li>
-						<li id="signin2">
-							
-							<a href="#">REGISTER</a>
-						</li>
-					</ul>
-				</div>
-				<div class="search">
-					<form action="#" method="get">
-						<input type="text" placeholder="Enter Product Details">
-					</form>
-					<div class="search_botton">
-						<a href="#">SEARCH</a>
-						<i></i>
-					</div>	
-				</div>
-			</div>			
-		</div>
+	<div class="box">
+		<p>看看今天吃什么</p>
+		<form action="###">
+			<input type="text" placeholder="在这输入菜单">
+			<a href="#" id="sub">提交新菜单</a>
+		</form>
+		
+		<ol>
+			<div class="tips">点击菜单可删除</div>
+
+		</ol>
+		<a href="#" id="roll">点这里帮你选择</a>
+		
+		
 	</div>
-	<div id="main">
-	<div class="container">
-		<img src="img/header.png" alt="banner" usemap="#x">
-		<!-- <map name="x">
-			<area shape="rect" coords="800,10,980,100" href="#" alt="">
-		</map> -->
-		<!-- map元素已经逐渐被淘汰，可以使用相应尺寸的a元素覆盖在相应位置达到相同效果 -->
-		<div id="main_info">
-			<div class="left">
-				<div class="c">
-					<div class="c_topback"></div>
-					<div class="c_main">
-						<h3>Categories</h3>
-						
-						<ul>
-							<li><a href="#">Arts</a></li>
-							<li><a href="#">Artsa</a></li>
-							<li><a href="#">Artsaa</a></li>
-							<li><a href="#">Arts</a></li>
-							<li><a href="#">Arts</a></li>
-							<li><a href="#">Arts</a></li>
-							<li><a href="#">Arts</a></li>
-							<li><a href="#">Arts</a></li>
-							<li><a href="#">Arts</a></li>
-							<li><a href="#">Arts</a></li>
-							<li><a href="#">Arts</a></li>
-							<li><a href="#">Arts</a></li>
-							<li><a href="#">Arts</a></li>
-							<li><a href="#">Arts</a></li>
-							<li><a href="#">Arts</a></li>
-						</ul>
-						
-					</div>
-					<div class="c_bottomback"></div>
-				</div>
-				<div class="pr">
-					<div class="title">
-						<i></i>
-						<a href="#">Product Reviews</a>
-					</div>
-					<ul>
-						<li>
-							<a href="#">
-								<img src="img/Layer.png" alt="review">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span>Tue, June 2011 </span></p>
-							</a>	
-						</li>
-						<li>
-							<a href="#">
-								<img src="img/Layer.png" alt="review">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span>Tue, June 2011 </span></p>
-							</a>	
-						</li>
-						<li>
-							<a href="#">
-								<img src="img/Layer.png" alt="review">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span>Tue, June 2011 </span></p>
-							</a>	
-						</li>
-					</ul>
-					<a href="#" class="more">MORE REVIEWS</a>
-				</div>
-				<div class="pm">
-					<div class="title">
-						<i></i>
-						<a href="#">Payment Methods</a>
-					</div>
-					<ul>
-						<li class="l1"><a href="#"></a></li>
-						<li class="l2"><a href="#"></a></li>
-						<li class="l3"><a href="#"></a></li>
-						<li class="l4"><a href="#"></a></li>
-						<li class="l5"><a href="#"></a></li>
-						<li class="l6"><a href="#"></a></li>
-						<li class="l7"><a href="#"></a></li>
-						<li class="l8"><a href="#"></a></li>
-					</ul>
-				</div>						
-			</div>
-			<div class="right">
-				<div class="today">
-					<div class="title">
-						<i></i>
-						<a href="#">Today’s Featured Products</a>
-					</div>
-					<div class="today_topback"></div>
-					<div class="t_main">
-						<ul>
-							<li>
-								<img src="img/layer-39.png" alt="喜羊羊">
-								<p>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit.</p>
-								<h4>Price:<span>$23.00</span></h4>
-								<a href="#" class="buynow">&rarr; Buy Now</a>
-							</li>
-							<li>
-								<img src="img/layer-40.png" alt="鱼">
-								<p>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit.</p>
-								<h4>Price:<span>$23.00</span></h4>
-								<a href="#" class="buynow">&rarr; Buy Now</a>
-							</li>
-							<li>
-								<img src="img/layer-41.png" alt="车">
-								<p>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit.</p>
-								<h4>Price:<span>$23.00</span></h4>
-								<a href="#" class="buynow">&rarr; Buy Now</a>
-							</li>
-						</ul>
-					</div>
-					<div class="today_bottomback"></div>
-				</div>
-				<div class="pop">
-					<div class="title">
-						<i></i>
-						<a href="#">Popular Products</a>
-					</div>
-					<ul class="list">
-						<li>
-							<div class="list_backleft"></div>
-							<div class="l_main">
-								<img src="img/layer-47.png" alt="商品">
-								<p>Lorem ipsum dolor sit amet cons</p>
-								<h5>Price:<span>$23.00</span></h5>
-							</div>
-							<div class="list_backright"></div>
-							<a href="#" class="buy">BUY &rarr;</a>
-							<div class="like">
-								<p>120</p>
-								<i></i>
-							</div>	
-						</li>
-						<li>
-							<div class="list_backleft"></div>
-							<div class="l_main">
-								<img src="img/layer-48.png" alt="商品">
-								<p>Lorem ipsum dolor sit amet cons</p>
-								<h5>Price:<span>$23.00</span></h5>
-							</div>
-							<div class="l_backright"></div>
-							<a href="#" class="buy">BUY &rarr;</a>
-							<div class="like">
-								<p>120</p>
-								<i></i>
-							</div>	
-						</li>
-						<li>
-							<div class="list_backleft"></div>
-							<div class="l_main">
-								<img src="img/layer-49.png" alt="商品">
-								<p>Lorem ipsum dolor sit amet cons</p>
-								<h5>Price:<span>$23.00</span></h5>
-							</div>
-							<div class="list_backright"></div>
-							<a href="#" class="buy">BUY &rarr;</a>
-							<div class="like">
-								<p>120</p>
-								<i></i>
-							</div>	
-						</li>
-						<li>
-							<div class="list_backleft"></div>
-							<div class="l_main">
-								<img src="img/layer-50.png" alt="商品">
-								<p>Lorem ipsum dolor sit amet cons</p>
-								<h5>Price:<span>$23.00</span></h5>
-							</div>
-							<div class="list_backright"></div>
-							<a href="#" class="buy">BUY &rarr;</a>
-							<div class="like">
-								<p>120</p>
-								<i></i>
-							</div>	
-						</li>
-						<li>
-							<div class="list_backleft"></div>
-							<div class="l_main">
-								<img src="img/layer-47.png" alt="商品">
-								<p>Lorem ipsum dolor sit amet cons</p>
-								<h5>Price:<span>$23.00</span></h5>
-							</div>
-							<div class="list_backright"></div>
-							<a href="#" class="buy">BUY &rarr;</a>
-							<div class="like">
-								<p>120</p>
-								<i></i>
-							</div>	
-						</li>
-						<li>
-							<div class="list_backleft"></div>
-							<div class="l_main">
-								<img src="img/layer-48.png" alt="商品">
-								<p>Lorem ipsum dolor sit amet cons</p>
-								<h5>Price:<span>$23.00</span></h5>
-							</div>
-							<div class="list_backright"></div>
-							<a href="#" class="buy">BUY &rarr;</a>
-							<div class="like">
-								<p>120</p>
-								<i></i>
-							</div>	
-						</li>
-						<li>
-							<div class="list_backleft"></div>
-							<div class="l_main">
-								<img src="img/layer-49.png" alt="商品">
-								<p>Lorem ipsum dolor sit amet cons</p>
-								<h5>Price:<span>$23.00</span></h5>
-							</div>
-							<div class="list_backright"></div>
-							<a href="#" class="buy">BUY &rarr;</a>
-							<div class="like">
-								<p>120</p>
-								<i></i>
-							</div>	
-						</li>
-						<li>
-							<div class="list_backleft"></div>
-							<div class="l_main">
-								<img src="img/layer-50.png" alt="商品">
-								<p>Lorem ipsum dolor sit amet cons</p>
-								<h5>Price:<span>$23.00</span></h5>
-							</div>
-							<div class="list_backright"></div>
-							<a href="#" class="buy">BUY &rarr;</a>
-							<div class="like">
-								<p>120</p>
-								<i></i>
-							</div>	
-						</li>
-					</ul>
-					<div class="page">
-						<ul>
-							<li class="act"><a href="#">1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">4</a></li>
-							<li><a href="#">5</a></li>
-							<li><a href="#">Next&gt;</a></li>
-							<li><a href="#">Last&gt;&gt;</a></li>
-						</ul>
-					</div>	
-				</div>
-			</div>
-		</div>
-	</div>
-</div>	
-<div id="footer">
-	<div class="container">
-		<ul class="footer_left_list">
-			<li>
-				<h4>Company</h4>
-				<ul class="footer_left_list_link">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Home</a></li>
-				</ul>
-			</li>
-			<li>
-				<h4>Categories</h4>
-				<ul class="footer_left_list_link">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Home</a></li>
-				</ul>
-			</li>
-			<li>
-				<h4>information</h4>
-				<ul class="footer_left_list_link">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Home</a></li>
+	<script type="text/javascript" src="jquery-1.11.3.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			"111";
+			$("#sub").click(function(){
+			
+			if($("li").length>0){
+				$("p").html("看看今天吃什么");	
+				var b=0;
+			for(var i=0;i<$("li").length;i++){	
+				b=0;
+				var $con=$("input").val();
+				// var lic=$("li")[i].childNodes[0].nodeValue;
+				var lic=$($("li")[i]).text();
+				if($con!=lic){b=1;}else{b=0;break;}
+				}
+
+				if(b==1){
+
+				if($con==""){$("p").html("空着不好吧？")
+				}
+			
+				else if($("li").length<10){
+				var dis="<li>"+$con+"</li>";
+				$(dis).appendTo("ol");
+				}else{$("p").html("10个选项还不满意啊？")};
+				if($("li").length>0){$(".tips").css({"display":"block"})}else{return false;};
+
+
+				}else{$("p").html("这条重复了哦。");}
+				}else{
+				$("p").html("看看今天吃什么");
+				var $con=$("input").val();
+				if($con==""){$("p").html("空着不好吧？")
+					}
+			
+				else if($("li").length<10){
+				var dis="<li>"+$con+"</li>";
+				$(dis).appendTo("ol");
+				}else{$("p").html("10个选项还不满意啊？")};
+				if($("li").length>0){$(".tips").css({"display":"block"})}else{return false;};
+				}	
+
+				$("li").click(function(){
+					$(this).remove();
+					if($("li").length==0){$(".tips").css({"display":"none"})}else{return false}
 					
-				</ul>
-			</li>
-		</ul>
-		<div class="footer_middle">
-			<div class="footer_middle_top">
-				<h4>Let’s be friends</h4>
-				<div class="share">
-					<ul>
-						<li class="tw"><a href="#"></a></li>
-						<li class="fb"><a href="#"></a></li>
-						<li class="rss"><a href="#"></a></li>
-						<li class="mail"><a href="#"></a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="footer_middle_bottom">
-				<h4>Subscribe</h4>
-				<p>Get free product updates &amp; specials!</p>
-				<form class="email" action="#" method="post">
-					<!-- <textarea placeholder="Enter Email"></textarea> -->
-					<input type="text" placeholder="Enter Email">
-					<a href="#">SUBMIT</a>
-				</form>
-			</div>
-		</div>
-		<ul class="footer_right">
-			<li class="yibai">
-				<i ></i>
-				<p>Shop online with us safely &amp; securely</p>
-			</li>
-			<li class="order">
-				<i ></i>
-				<p>We ship your orders anywhere!</p>
-			</li>
-		</ul>
-		<div class="clear"></div>
-		<div class="cr">
-			<p>©2011 Foodie Shop - Terms - Privacy Policy - Designed by <a href="#">GraphicsFuel.com</a></p>
-		</div>
-	</div>	
-</div>
-<div id="go_top">
-	<a href="#"><img src="img/Pattern-Fill-3-copy.png" alt="返回顶部">Top</a>
-</div>
+				});
+				$("input").val("");
+				return false;	
+
+			})
+		
+			$("#roll").click(function(){
+			if($("li").length>=2 ){
+				var i=$("li").length;
+				var n=Math.floor(Math.random()*i);
+				var $res=$("li").eq(n);
+				$("p").html("我看今天吃"+"<i>"+$($res).clone().text()+"</i>"+"好了。")
+				}else{$("p").html("选项太少了。")};
+
+				$($res).addClass("cho").siblings().removeClass("cho");
+			return false;	
+				
+			})
+
+			
+
+		})
+		
+	</script>
 </body>
 </html>
